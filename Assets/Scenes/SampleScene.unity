@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cantidadDeUnidades: 2147483647
-  periodoDeDias: 4253453
+  periodoDeDias: 666
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
