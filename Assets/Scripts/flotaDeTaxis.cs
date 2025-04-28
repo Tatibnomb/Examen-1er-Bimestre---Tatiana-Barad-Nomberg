@@ -15,9 +15,9 @@ public class flotaDeTaxis : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        descuento = costoPorLitro - (20/100);
+        descuento = costoPorLitro - 0.2f;
         litroDeCombustible = 15;
-        costoPorLitro = cantidadDeUnidades * (periodoDeDias * 90) * litroDeCombustible;
+        costoPorLitro = litroDeCombustible * (cantidadDeUnidades * (periodoDeDias * 90));
         costoTotalCombustible = costoPorLitro * 130;
 
         if (periodoDeDias < 5 || cantidadDeUnidades < 1)
@@ -27,12 +27,12 @@ public class flotaDeTaxis : MonoBehaviour
         }
         if(litroDeCombustible >= 100)
         {
-            costoConDescuento = descuento - (20 / 100);
+            costoConDescuento = descuento - 0.2f;
             Debug.Log("El monto del descuento es de $" + descuento + "y el costo final del combustible es de $" + costoConDescuento);
         }
         else
         {
-            Debug.Log("Una flota de " + cantidadDeUnidades + "unidades trabajando durante " + periodoDeDias + "días implicará un gasto de " + costoTotalCombustible + "pesos en concepto de combustible");
+            Debug.Log("Una flota de " + cantidadDeUnidades + " unidades trabajando durante " + periodoDeDias + " días implicará un gasto de " + costoTotalCombustible + " pesos en concepto de combustible");
         }
     }
 

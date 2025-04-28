@@ -151,6 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ff1b95b8c3328849b27e6083c763ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cantidadDeUnidades: 4242
+  periodoDeDias: 4253453
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
