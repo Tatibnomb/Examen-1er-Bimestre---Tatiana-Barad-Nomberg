@@ -27,8 +27,8 @@ public class flotaDeTaxis : MonoBehaviour
         }
         if(litroDeCombustible >= 100)
         {
-            costoConDescuento = descuento - 0.2f;
-            Debug.Log("El monto del descuento es de $" + descuento + "y el costo final del combustible es de $" + costoConDescuento);
+            costoConDescuento = descuento * 0.2f;
+            Debug.Log("El monto del descuento es de $" + descuento + " y el costo final del combustible es de $" + costoConDescuento);
         }
         else
         {
